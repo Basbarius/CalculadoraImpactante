@@ -16,6 +16,7 @@
 		A8602AFE29B7F5D300246C73 /* CalculadoraImpactanteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8602AFD29B7F5D300246C73 /* CalculadoraImpactanteTests.swift */; };
 		A8602B0829B7F5D300246C73 /* CalculadoraImpactanteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8602B0729B7F5D300246C73 /* CalculadoraImpactanteUITests.swift */; };
 		A8602B0A29B7F5D300246C73 /* CalculadoraImpactanteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8602B0929B7F5D300246C73 /* CalculadoraImpactanteUITestsLaunchTests.swift */; };
+		A878722029B7FC9200099024 /* AlejandroStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A878721F29B7FC9200099024 /* AlejandroStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A8602B0329B7F5D300246C73 /* CalculadoraImpactanteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculadoraImpactanteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8602B0729B7F5D300246C73 /* CalculadoraImpactanteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraImpactanteUITests.swift; sourceTree = "<group>"; };
 		A8602B0929B7F5D300246C73 /* CalculadoraImpactanteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraImpactanteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A878721F29B7FC9200099024 /* AlejandroStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlejandroStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				A8602AEF29B7F5D300246C73 /* Assets.xcassets */,
 				A8602AF129B7F5D300246C73 /* LaunchScreen.storyboard */,
 				A8602AF429B7F5D300246C73 /* Info.plist */,
+				A878721F29B7FC9200099024 /* AlejandroStoryboard.storyboard */,
 			);
 			path = CalculadoraImpactante;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				A8602AF329B7F5D300246C73 /* LaunchScreen.storyboard in Resources */,
 				A8602AF029B7F5D300246C73 /* Assets.xcassets in Resources */,
+				A878722029B7FC9200099024 /* AlejandroStoryboard.storyboard in Resources */,
 				A8602AEE29B7F5D100246C73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
