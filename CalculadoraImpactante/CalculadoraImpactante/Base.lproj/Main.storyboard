@@ -150,11 +150,163 @@
             </objects>
             <point key="canvasLocation" x="1355" y="64"/>
         </scene>
+        <!--AppIntro-->
+        <scene sceneID="3Ka-IU-0xJ">
+            <objects>
+                <viewController title="AppIntro" id="1wb-pU-mk7" customClass="AppIntroViewController" customModule="CalculadoraImpactante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xIe-zX-p3M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FYg-Cv-r42">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Actions" image="arrow.up.left.and.down.right.magnifyingglass" catalog="system" id="Wrp-y0-DNd"/>
+                                    <tabBarItem title="Home" image="homekit" catalog="system" id="ZtL-c4-Hgq"/>
+                                    <tabBarItem title="Blog" image="book" catalog="system" id="Apa-Bb-tQP"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Algun mensaje inspirador que le llegue al usuario" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-HW-Mpf">
+                                <rect key="frame" x="59" y="548" width="296" height="107"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3a-Sx-IiQ">
+                                <rect key="frame" x="228" y="683" width="127" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Continuar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="illustrated-save-planet-design_23-2148515539" translatesAutoresizingMaskIntoConstraints="NO" id="9bd-Nz-VV4">
+                                <rect key="frame" x="20" y="181" width="374" height="305"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oZl-cP-B15"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9bd-Nz-VV4" firstAttribute="centerX" secondItem="oZl-cP-B15" secondAttribute="centerX" id="Vmp-2r-g46"/>
+                            <constraint firstItem="AXa-HW-Mpf" firstAttribute="centerY" secondItem="xIe-zX-p3M" secondAttribute="centerY" constant="132.5" id="xep-In-Osk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AppIntroImage" destination="9bd-Nz-VV4" id="Z0K-Fy-zIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWF-DL-JUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2154" y="92"/>
+        </scene>
+        <!--BlogBoard-->
+        <scene sceneID="5wK-4G-h8H">
+            <objects>
+                <viewController title="BlogBoard" id="c5F-ke-GMn" customClass="AppIntroViewController" customModule="CalculadoraImpactante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z1R-ft-GgS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eon-Gi-OcF">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Actions" image="arrow.up.left.and.down.right.magnifyingglass" catalog="system" id="ZPm-dD-fNj"/>
+                                    <tabBarItem title="Home" image="homekit" catalog="system" id="yjL-Zo-K9U"/>
+                                    <tabBarItem title="Blog" image="book" catalog="system" id="COM-MC-bDB"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Read our blog!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Il-2T-aTo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00k-bc-6Zq">
+                                <rect key="frame" x="20" y="237" width="319" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="titleShadowOffset" width="20" height="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Blog 1" cornerStyle="large"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="johannes-plenio-Z6E4rJemy24-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="vPb-H5-FeG">
+                                <rect key="frame" x="92" y="237" width="302" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3XY-NY-gaj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ka9-ES-wVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="92"/>
+        </scene>
+        <!--BlogPost-->
+        <scene sceneID="Em7-jn-Suw">
+            <objects>
+                <viewController title="BlogPost" id="mVc-J7-c3y" customClass="AppIntroViewController" customModule="CalculadoraImpactante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2y-xX-wzT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2s-Ln-CdT">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Actions" image="arrow.up.left.and.down.right.magnifyingglass" catalog="system" id="kJJ-Dj-dwa"/>
+                                    <tabBarItem title="Home" image="homekit" catalog="system" id="F5T-Fi-cqP"/>
+                                    <tabBarItem title="Blog" image="book" catalog="system" id="tD0-Ks-kc7"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog Post Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8j-HG-MY0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="johannes-plenio-Z6E4rJemy24-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="nit-aJ-wG0">
+                                <rect key="frame" x="0.0" y="140" width="414" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="2VX-Xf-erb"/>
+                                    <constraint firstAttribute="width" constant="414" id="ASn-BK-Cq7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK8-vg-wOp">
+                                <rect key="frame" x="59" y="417" width="297" height="321"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W2x-I9-xar"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W2x-I9-xar" firstAttribute="trailing" secondItem="VK8-vg-wOp" secondAttribute="trailing" constant="59" id="23C-2U-jg2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKF-EK-unN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3632" y="92"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.up.left.and.down.right.magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="illustrated-save-planet-design_23-2148515539" width="1480" height="986"/>
+        <image name="johannes-plenio-Z6E4rJemy24-unsplash" width="4368" height="2912"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
