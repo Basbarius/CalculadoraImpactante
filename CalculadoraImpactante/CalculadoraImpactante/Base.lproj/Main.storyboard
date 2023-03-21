@@ -69,6 +69,87 @@
             </objects>
             <point key="canvasLocation" x="639" y="64"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="BQe-BH-wqS">
+            <objects>
+                <viewController id="Yel-uE-mLe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fel-D0-OVP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qU3-Cj-ROb">
+                                <rect key="frame" x="0.0" y="33" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Recommendations" id="bvl-Kh-ZFQ"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="htO-XC-e0o">
+                                <rect key="frame" x="0.0" y="77" width="414" height="785"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ule-tA-KH9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="785"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-lR-UrG">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="785"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWb-oj-Pgp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Recommendation">
+                                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-Yy-qQk">
+                                                        <rect key="frame" x="0.0" y="157" width="414" height="156.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="2"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35B-J0-eh6">
+                                                        <rect key="frame" x="0.0" y="314.5" width="414" height="156"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="3"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmh-0Z-8hD">
+                                                        <rect key="frame" x="0.0" y="471.5" width="414" height="156.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="4"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bz-W7-YbF">
+                                                        <rect key="frame" x="0.0" y="629" width="414" height="156"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="5"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="kPd-lR-UrG" secondAttribute="bottom" id="Elf-8M-4t3"/>
+                                            <constraint firstAttribute="trailing" secondItem="kPd-lR-UrG" secondAttribute="trailing" id="OER-iE-08Q"/>
+                                            <constraint firstItem="kPd-lR-UrG" firstAttribute="top" secondItem="ule-tA-KH9" secondAttribute="top" id="XSz-GU-Cfb"/>
+                                            <constraint firstItem="kPd-lR-UrG" firstAttribute="leading" secondItem="ule-tA-KH9" secondAttribute="leading" id="lKv-rH-1yz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Glb-Vl-Rye"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="htO-XC-e0o" firstAttribute="bottom" secondItem="Glb-Vl-Rye" secondAttribute="bottom" id="K5p-cj-0Dj"/>
+                            <constraint firstItem="htO-XC-e0o" firstAttribute="top" secondItem="qU3-Cj-ROb" secondAttribute="bottom" id="RT3-AQ-qeq"/>
+                            <constraint firstItem="ule-tA-KH9" firstAttribute="height" secondItem="Glb-Vl-Rye" secondAttribute="height" multiplier="0.959658" id="WW4-0O-AJe"/>
+                            <constraint firstItem="htO-XC-e0o" firstAttribute="trailing" secondItem="Glb-Vl-Rye" secondAttribute="trailing" id="rVK-m0-KZz"/>
+                            <constraint firstItem="htO-XC-e0o" firstAttribute="leading" secondItem="Glb-Vl-Rye" secondAttribute="leading" id="wur-eQ-qeW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fuw-cm-aZC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qc7-zl-L74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="64"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.up.left.and.down.right.magnifyingglass" catalog="system" width="128" height="115"/>
@@ -76,6 +157,9 @@
         <image name="homekit" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
