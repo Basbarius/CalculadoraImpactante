@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,44 +79,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qU3-Cj-ROb">
-                                <rect key="frame" x="0.0" y="33" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="37" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Recommendations" id="bvl-Kh-ZFQ"/>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="htO-XC-e0o">
-                                <rect key="frame" x="0.0" y="77" width="414" height="785"/>
+                                <rect key="frame" x="0.0" y="81" width="414" height="781"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ule-tA-KH9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="785"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="781"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-lR-UrG">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="785"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="781"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWb-oj-Pgp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="155.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Recommendation">
                                                             <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAK-Yy-qQk">
-                                                        <rect key="frame" x="0.0" y="157" width="414" height="156.5"/>
+                                                        <rect key="frame" x="0.0" y="156.5" width="414" height="155"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="2"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35B-J0-eh6">
-                                                        <rect key="frame" x="0.0" y="314.5" width="414" height="156"/>
+                                                        <rect key="frame" x="0.0" y="312.5" width="414" height="155.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="3"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmh-0Z-8hD">
-                                                        <rect key="frame" x="0.0" y="471.5" width="414" height="156.5"/>
+                                                        <rect key="frame" x="0.0" y="469" width="414" height="155.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="4"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bz-W7-YbF">
-                                                        <rect key="frame" x="0.0" y="629" width="414" height="156"/>
+                                                        <rect key="frame" x="0.0" y="625.5" width="414" height="155.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="5"/>
                                                     </button>
@@ -300,11 +301,62 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
             </objects>
             <point key="canvasLocation" x="3632" y="92"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ZjP-iB-Frh">
+            <objects>
+                <viewController id="Egc-T7-4Xc" customClass="ViewController" customModule="Results" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jZx-37-yku">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="REsult in CO&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5J-Rj-el6">
+                                <rect key="frame" x="93" y="469" width="207" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ktw-M1-33n">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="fu9-f6-M7M"/>
+                                    <tabBarItem systemItem="more" id="FDc-wl-qWk"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your foot print is equal to ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B9-GZ-OxI">
+                                <rect key="frame" x="114" y="508" width="263" height="162"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54t-8z-5EU">
+                                <rect key="frame" x="47" y="167" width="319" height="231"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GiN-at-bxH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="54t-8z-5EU" firstAttribute="leading" secondItem="GiN-at-bxH" secondAttribute="leading" constant="47" id="1bo-6T-CGZ"/>
+                            <constraint firstItem="9B9-GZ-OxI" firstAttribute="top" secondItem="K5J-Rj-el6" secondAttribute="bottom" constant="-4" id="BtB-Gs-J6y"/>
+                            <constraint firstItem="GiN-at-bxH" firstAttribute="trailing" secondItem="54t-8z-5EU" secondAttribute="trailing" constant="48" id="DI9-2x-XsY"/>
+                            <constraint firstItem="54t-8z-5EU" firstAttribute="top" secondItem="GiN-at-bxH" secondAttribute="top" constant="108" id="M6f-hA-6Jc"/>
+                            <constraint firstItem="K5J-Rj-el6" firstAttribute="top" secondItem="54t-8z-5EU" secondAttribute="bottom" constant="71" id="bo7-As-hRb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Imagenes" destination="54t-8z-5EU" id="dY1-ZO-pwO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFz-UE-gVi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4410" y="92"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="arrow.up.left.and.down.right.magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="arrow.up.left.and.down.right.magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="book" catalog="system" width="128" height="99"/>
-        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="illustrated-save-planet-design_23-2148515539" width="1480" height="986"/>
         <image name="johannes-plenio-Z6E4rJemy24-unsplash" width="4368" height="2912"/>
         <systemColor name="systemBackgroundColor">
