@@ -283,7 +283,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Blog2">
-                                                            <backgroundConfiguration key="background" cornerRadius="20" image="johannes-plenio-Z6E4rJemy24-unsplash" imageContentMode="scaleToFill">
+                                                            <backgroundConfiguration key="background" cornerRadius="20" image="wp4492340" imageContentMode="scaleToFill">
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="strokeColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
@@ -300,7 +300,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Blog3">
-                                                            <backgroundConfiguration key="background" cornerRadius="20" image="johannes-plenio-Z6E4rJemy24-unsplash" imageContentMode="scaleToFill">
+                                                            <backgroundConfiguration key="background" cornerRadius="20" image="mountains-landscapes-nature-lakes-free-background-wallpaper-preview" imageContentMode="scaleToFill">
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="strokeColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
@@ -317,7 +317,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Blog4">
-                                                            <backgroundConfiguration key="background" cornerRadius="20" image="johannes-plenio-Z6E4rJemy24-unsplash" imageContentMode="scaleToFill">
+                                                            <backgroundConfiguration key="background" cornerRadius="20" image="360_F_266329631_G2DCVSOXakrLg1smfXjdyKFwnWnjI84O" imageContentMode="scaleToFill">
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="strokeColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </backgroundConfiguration>
@@ -903,6 +903,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
         </scene>
     </scenes>
     <resources>
+        <image name="360_F_266329631_G2DCVSOXakrLg1smfXjdyKFwnWnjI84O" width="539" height="360"/>
         <image name="arrow.up.left.and.down.right.magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="circle" catalog="system" width="128" height="121"/>
@@ -910,6 +911,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
         <image name="illustrated-save-planet-design_23-2148515539" width="1480" height="986"/>
         <image name="johannes-plenio-Z6E4rJemy24-unsplash" width="4368" height="2912"/>
         <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
+        <image name="mountains-landscapes-nature-lakes-free-background-wallpaper-preview" width="728" height="410"/>
+        <image name="wp4492340" width="1332" height="850"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
