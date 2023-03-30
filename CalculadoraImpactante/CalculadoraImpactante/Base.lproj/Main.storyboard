@@ -789,39 +789,57 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J96-pb-7aZ">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J96-pb-7aZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hJ2-fY-ft8"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Select the type of survey you would like to take" id="Pwq-Rr-KTU"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-pR-9b6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-pR-9b6">
                                 <rect key="frame" x="0.0" y="132" width="414" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="0LW-zd-rch"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Food related questions">
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyz-AZ-aED">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyz-AZ-aED">
                                 <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eFU-RR-F8L"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Survey 1" id="TLE-7K-bqh"/>
                                 </items>
                             </navigationBar>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q30-Su-fTh">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q30-Su-fTh">
                                 <rect key="frame" x="0.0" y="336" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="g7h-vg-HuG"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Survey 2" id="YYA-jE-opM"/>
                                 </items>
                             </navigationBar>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IU9-tU-wLt">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU9-tU-wLt">
                                 <rect key="frame" x="0.0" y="595" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="duc-ix-OUj"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Survey 3" id="XNY-pB-QAT"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTm-Fd-kXf">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTm-Fd-kXf">
                                 <rect key="frame" x="144" y="252" width="127" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="hsv-tb-hBl"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Take Survey">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
@@ -830,8 +848,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                                     <segue destination="ZRf-WD-mLE" kind="show" id="yda-t5-9sw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ook-gZ-bmm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ook-gZ-bmm">
                                 <rect key="frame" x="0.0" y="380" width="414" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="bnY-ro-XH0"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <string key="title">Home appliances questions
@@ -839,8 +860,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                                     <color key="baseBackgroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRa-oM-dak">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRa-oM-dak">
                                 <rect key="frame" x="144" y="503" width="127" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="LxF-sW-zLm"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Take Survey">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
@@ -849,9 +873,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                                     <segue destination="ZRf-WD-mLE" kind="show" id="r7u-bf-v4p"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-2A-cqQ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-2A-cqQ">
                                 <rect key="frame" x="144" y="762" width="127" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="MPf-t6-cBn"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Take Survey">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
@@ -860,7 +886,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                                     <segue destination="ZRf-WD-mLE" kind="show" id="ys8-sg-nGG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkO-Bp-Kdx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkO-Bp-Kdx">
                                 <rect key="frame" x="0.0" y="639" width="414" height="101"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Traveling and transportations questions">
@@ -871,14 +897,37 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, </string>
                         <viewLayoutGuide key="safeArea" id="1mI-83-RIl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IU9-tU-wLt" firstAttribute="top" secondItem="pRa-oM-dak" secondAttribute="bottom" constant="22" id="1HY-6Y-hBa"/>
-                            <constraint firstItem="xyz-AZ-aED" firstAttribute="top" secondItem="J96-pb-7aZ" secondAttribute="bottom" constant="22" id="3MO-EB-RXT"/>
-                            <constraint firstItem="Ook-gZ-bmm" firstAttribute="top" secondItem="Q30-Su-fTh" secondAttribute="bottom" constant="22" id="Eyx-ye-bYH"/>
-                            <constraint firstItem="VkO-Bp-Kdx" firstAttribute="top" secondItem="IU9-tU-wLt" secondAttribute="bottom" constant="22" id="Sce-oO-ZV5"/>
-                            <constraint firstItem="hTm-Fd-kXf" firstAttribute="top" secondItem="Cyd-pR-9b6" secondAttribute="bottom" constant="22" id="ubF-Ra-tAe"/>
-                            <constraint firstItem="Ook-gZ-bmm" firstAttribute="top" secondItem="Q30-Su-fTh" secondAttribute="bottom" constant="22" id="xLf-1W-DZN"/>
-                            <constraint firstItem="VkO-Bp-Kdx" firstAttribute="top" secondItem="IU9-tU-wLt" secondAttribute="bottom" constant="22" id="xyI-Hw-lyX"/>
-                            <constraint firstItem="Cyd-pR-9b6" firstAttribute="top" secondItem="xyz-AZ-aED" secondAttribute="bottom" constant="22" id="zXb-zp-XaL"/>
+                            <constraint firstItem="J96-pb-7aZ" firstAttribute="leading" secondItem="xyz-AZ-aED" secondAttribute="leading" id="0b2-JC-huu"/>
+                            <constraint firstItem="xyz-AZ-aED" firstAttribute="trailing" secondItem="Cyd-pR-9b6" secondAttribute="trailing" id="1HV-zU-lW5"/>
+                            <constraint firstItem="xyz-AZ-aED" firstAttribute="leading" secondItem="Cyd-pR-9b6" secondAttribute="leading" id="1ab-DB-dP4"/>
+                            <constraint firstItem="IU9-tU-wLt" firstAttribute="leading" secondItem="VkO-Bp-Kdx" secondAttribute="leading" id="2rO-ck-cgK"/>
+                            <constraint firstItem="Cyd-pR-9b6" firstAttribute="trailing" secondItem="Q30-Su-fTh" secondAttribute="trailing" id="3Qc-3g-zD2"/>
+                            <constraint firstItem="1mI-83-RIl" firstAttribute="bottom" secondItem="a3V-2A-cqQ" secondAttribute="bottom" constant="4" id="86u-qa-M7l"/>
+                            <constraint firstItem="J96-pb-7aZ" firstAttribute="centerX" secondItem="oMc-lT-g0f" secondAttribute="centerX" id="AhV-Wg-LUE"/>
+                            <constraint firstItem="Q30-Su-fTh" firstAttribute="top" secondItem="hTm-Fd-kXf" secondAttribute="bottom" constant="37" id="BPJ-T2-xum"/>
+                            <constraint firstItem="Q30-Su-fTh" firstAttribute="trailing" secondItem="Ook-gZ-bmm" secondAttribute="trailing" id="Cpr-x3-yeD"/>
+                            <constraint firstItem="a3V-2A-cqQ" firstAttribute="top" secondItem="VkO-Bp-Kdx" secondAttribute="bottom" constant="22" id="DpC-c4-Yov"/>
+                            <constraint firstItem="pRa-oM-dak" firstAttribute="top" secondItem="Ook-gZ-bmm" secondAttribute="bottom" constant="22" id="DsN-OI-vXn"/>
+                            <constraint firstItem="Cyd-pR-9b6" firstAttribute="leading" secondItem="Q30-Su-fTh" secondAttribute="leading" id="EKI-fW-w7D"/>
+                            <constraint firstItem="hTm-Fd-kXf" firstAttribute="trailing" secondItem="pRa-oM-dak" secondAttribute="trailing" id="H9o-9v-5q9"/>
+                            <constraint firstItem="hTm-Fd-kXf" firstAttribute="top" secondItem="Cyd-pR-9b6" secondAttribute="bottom" constant="19" id="M9C-Uu-P5T"/>
+                            <constraint firstItem="pRa-oM-dak" firstAttribute="leading" secondItem="a3V-2A-cqQ" secondAttribute="leading" id="N8i-NT-zHq"/>
+                            <constraint firstItem="hTm-Fd-kXf" firstAttribute="leading" secondItem="1mI-83-RIl" secondAttribute="leading" constant="144" id="ODM-vr-zAD"/>
+                            <constraint firstItem="IU9-tU-wLt" firstAttribute="top" secondItem="pRa-oM-dak" secondAttribute="bottom" constant="45" id="Oab-qK-KzF"/>
+                            <constraint firstItem="Ook-gZ-bmm" firstAttribute="trailing" secondItem="IU9-tU-wLt" secondAttribute="trailing" id="UAo-vZ-ugV"/>
+                            <constraint firstItem="VkO-Bp-Kdx" firstAttribute="top" secondItem="IU9-tU-wLt" secondAttribute="bottom" id="VLi-m4-HZS"/>
+                            <constraint firstItem="J96-pb-7aZ" firstAttribute="top" secondItem="1mI-83-RIl" secondAttribute="top" id="WKW-rV-SI6"/>
+                            <constraint firstItem="Ook-gZ-bmm" firstAttribute="top" secondItem="Q30-Su-fTh" secondAttribute="bottom" id="X5H-MY-vim"/>
+                            <constraint firstItem="hTm-Fd-kXf" firstAttribute="leading" secondItem="pRa-oM-dak" secondAttribute="leading" id="XOE-Jb-i7Q"/>
+                            <constraint firstItem="J96-pb-7aZ" firstAttribute="trailing" secondItem="xyz-AZ-aED" secondAttribute="trailing" id="b16-hU-UU8"/>
+                            <constraint firstItem="pRa-oM-dak" firstAttribute="trailing" secondItem="a3V-2A-cqQ" secondAttribute="trailing" id="drR-9o-Fso"/>
+                            <constraint firstItem="hTm-Fd-kXf" firstAttribute="centerX" secondItem="Q30-Su-fTh" secondAttribute="centerX" id="g3A-3a-Uij"/>
+                            <constraint firstItem="IU9-tU-wLt" firstAttribute="trailing" secondItem="VkO-Bp-Kdx" secondAttribute="trailing" id="mqw-Yj-KLs"/>
+                            <constraint firstItem="Q30-Su-fTh" firstAttribute="leading" secondItem="Ook-gZ-bmm" secondAttribute="leading" id="pw8-T3-mc4"/>
+                            <constraint firstItem="Cyd-pR-9b6" firstAttribute="top" secondItem="xyz-AZ-aED" secondAttribute="bottom" id="vDD-G1-9DU"/>
+                            <constraint firstItem="J96-pb-7aZ" firstAttribute="leading" secondItem="1mI-83-RIl" secondAttribute="leading" id="vRU-jb-FKw"/>
+                            <constraint firstItem="Ook-gZ-bmm" firstAttribute="leading" secondItem="IU9-tU-wLt" secondAttribute="leading" id="xEx-FX-PWn"/>
+                            <constraint firstItem="xyz-AZ-aED" firstAttribute="top" secondItem="J96-pb-7aZ" secondAttribute="bottom" id="xnj-3n-Xq5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="YNy-cw-Ye1"/>
