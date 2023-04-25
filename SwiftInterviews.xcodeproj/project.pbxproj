@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB0906229F894C200D25902 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0906129F894C200D25902 /* SwiftUIView.swift */; };
+		3BB0906429F894CF00D25902 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0906329F894CF00D25902 /* File.swift */; };
 		A85294BE29F72FCB00172B71 /* QuestionTypeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85294BD29F72FCB00172B71 /* QuestionTypeSelection.swift */; };
 		A85294C029F88B6600172B71 /* QuestionTextSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85294BF29F88B6600172B71 /* QuestionTextSpace.swift */; };
 		A86D117B29EF4FC200AF6A7B /* SwiftInterviewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86D117A29EF4FC200AF6A7B /* SwiftInterviewsApp.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BB0906129F894C200D25902 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		3BB0906329F894CF00D25902 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A85294BD29F72FCB00172B71 /* QuestionTypeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTypeSelection.swift; sourceTree = "<group>"; };
 		A85294BF29F88B6600172B71 /* QuestionTextSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTextSpace.swift; sourceTree = "<group>"; };
 		A86D117729EF4FC200AF6A7B /* SwiftInterviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftInterviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,7 @@
 		A86D116E29EF4FC200AF6A7B = {
 			isa = PBXGroup;
 			children = (
+				3BB0906329F894CF00D25902 /* File.swift */,
 				A86D117929EF4FC200AF6A7B /* SwiftInterviews */,
 				A86D117829EF4FC200AF6A7B /* Products */,
 			);
@@ -61,6 +66,7 @@
 				A86D117C29EF4FC200AF6A7B /* ContentView.swift */,
 				A86D118829EF514500AF6A7B /* QuestionTypeSlider.swift */,
 				A85294BD29F72FCB00172B71 /* QuestionTypeSelection.swift */,
+				3BB0906129F894C200D25902 /* SwiftUIView.swift */,
 				A85294BF29F88B6600172B71 /* QuestionTextSpace.swift */,
 				A86D117E29EF4FC700AF6A7B /* Assets.xcassets */,
 				A86D118029EF4FC700AF6A7B /* Preview Content */,
@@ -148,6 +154,8 @@
 			files = (
 				A86D117D29EF4FC200AF6A7B /* ContentView.swift in Sources */,
 				A86D118929EF514600AF6A7B /* QuestionTypeSlider.swift in Sources */,
+				3BB0906429F894CF00D25902 /* File.swift in Sources */,
+				3BB0906229F894C200D25902 /* SwiftUIView.swift in Sources */,
 				A85294BE29F72FCB00172B71 /* QuestionTypeSelection.swift in Sources */,
 				A86D117B29EF4FC200AF6A7B /* SwiftInterviewsApp.swift in Sources */,
 				A85294C029F88B6600172B71 /* QuestionTextSpace.swift in Sources */,
