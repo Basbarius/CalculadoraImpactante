@@ -26,6 +26,7 @@
 		A8D46F9829FB3589000F9E64 /* InfoView10.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D46F9529FB3588000F9E64 /* InfoView10.swift */; };
 		A8D46F9929FB3589000F9E64 /* InfoView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D46F9629FB3589000F9E64 /* InfoView3.swift */; };
 		A8D46F9A29FB3589000F9E64 /* InfoView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D46F9729FB3589000F9E64 /* InfoView4.swift */; };
+		A8D46F9C29FB374F000F9E64 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D46F9B29FB374F000F9E64 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -63,6 +64,7 @@
 		A8D46F9529FB3588000F9E64 /* InfoView10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView10.swift; sourceTree = "<group>"; };
 		A8D46F9629FB3589000F9E64 /* InfoView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView3.swift; sourceTree = "<group>"; };
 		A8D46F9729FB3589000F9E64 /* InfoView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView4.swift; sourceTree = "<group>"; };
+		A8D46F9B29FB374F000F9E64 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A86D117C29EF4FC200AF6A7B /* ContentView.swift */,
 				A86D118829EF514500AF6A7B /* QuestionTypeSlider.swift */,
 				A85294BD29F72FCB00172B71 /* QuestionTypeSelection.swift */,
+				A8D46F9B29FB374F000F9E64 /* InfoView.swift */,
 				3BB0906129F894C200D25902 /* SwiftUIView.swift */,
 				A8D46F8A29FB357B000F9E64 /* ActionsItem.swift */,
 				A8D46F9629FB3589000F9E64 /* InfoView3.swift */,
@@ -213,6 +216,7 @@
 				A8D46F9129FB357B000F9E64 /* ActionsItem.swift in Sources */,
 				A85294C029F88B6600172B71 /* QuestionTextSpace.swift in Sources */,
 				A8D46F8E29FB357B000F9E64 /* InfoView6.swift in Sources */,
+				A8D46F9C29FB374F000F9E64 /* InfoView.swift in Sources */,
 				A8D46F9429FB357B000F9E64 /* InfoView8.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
