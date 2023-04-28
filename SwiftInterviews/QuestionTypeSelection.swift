@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionTypeSelection: View {
-    var QuestionNumber:String = "Question number 3"
+    var InterviewInfo: InterviewInformation = InterviewInformation()
     var QuestionString:String = "Cool really long question question"
     var options = ["Option 1","Option 2","Option 3","Option 4"]
     @State private var selectedOption = "Option 1"
@@ -17,7 +17,7 @@ struct QuestionTypeSelection: View {
     
     var body: some View {
         VStack{
-            Text(QuestionNumber).italic().font(.title3).padding().frame(minWidth: 0,
+            Text("Question number  \(InterviewInfo.numberOfQuestion + 1)").italic().font(.title3).padding().frame(minWidth: 0,
                                         maxWidth: .infinity,
                                                  minHeight: 0,
                                                  maxHeight: 60,
@@ -38,7 +38,13 @@ struct QuestionTypeSelection: View {
             HStack{
                 Spacer()
             Button(action:{
-                //Next question and saving response
+                for (index, element) in options.enumerated() {
+                    if(element==selectedOption){
+                        InterviewInfo.score += Double(index+1)
+                        
+                    }
+                    InterviewInfo.numberOfQuestion += 1
+                }
             }){
                 Text("Next").frame(width: 50, height: 40, alignment: .center)
             }.buttonStyle(.bordered).cornerRadius(100)
