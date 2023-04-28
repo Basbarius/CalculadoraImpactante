@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QuestionTypeSelection: View {
+    var multiplier: Double = 1
     var InterviewInfo: InterviewInformation = InterviewInformation()
     var QuestionString:String = "Cool really long question question"
     var options = ["Option 1","Option 2","Option 3","Option 4"]
@@ -40,10 +41,26 @@ struct QuestionTypeSelection: View {
             Button(action:{
                 for (index, element) in options.enumerated() {
                     if(element==selectedOption){
-                        InterviewInfo.score += Double(index+1)
+                        InterviewInfo.score += Double(index+1) * multiplier
                         
                     }
+                    var x = InterviewInfo.score/16
+                    if(x < 1){
+                        InterviewInfo.group = 5
+                    }
+                    else if(x < 2){
+                        InterviewInfo.group = 4
+                    }
+                    else if(x < 3){
+                            InterviewInfo.group = 3
+                    }
+                    else if(x < 4){
+                            InterviewInfo.group = 2
+                    }else{
+                        InterviewInfo.group = 1
+                    }
                     InterviewInfo.numberOfQuestion += 1
+                    
                 }
             }){
                 Text("Next").frame(width: 50, height: 40, alignment: .center)

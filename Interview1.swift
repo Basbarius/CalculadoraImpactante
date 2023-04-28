@@ -12,14 +12,14 @@ struct Interview1: View {
     var body: some View {
         switch InterviewInfo.numberOfQuestion{
         case 0:
-            QuestionTypeSlider(InterviewInfo: InterviewInfo, QuestionString: "¿Cuantas veces viajas en avion al año?", MinValue: 0, MaxValue: 10)
+            QuestionTypeSlider(multiplier: 2, InterviewInfo: InterviewInfo, QuestionString: "¿Cuantas veces viajas en avion al año?", MinValue: 0, MaxValue: 10)
 
         case 1:
-        QuestionTypeSelection(InterviewInfo: InterviewInfo, QuestionString: "¿Como es tu dieta?", options: ["Vegana", "Mixta", "Carne"])
+        QuestionTypeSelection(multiplier: 10,InterviewInfo: InterviewInfo, QuestionString: "¿Como es tu dieta?", options: ["Vegana", "Mixta", "Carne"])
         case 2:
-            QuestionTypeSlider(InterviewInfo: InterviewInfo, QuestionString: "¿Cuantos dias a la semana usas tu coche?", MinValue: 0, MaxValue: 7)
+            QuestionTypeSlider(multiplier: 3,InterviewInfo: InterviewInfo, QuestionString: "¿Cuantos dias a la semana usas tu coche?", MinValue: 0, MaxValue: 7)
         case 3:
-        QuestionTypeSelection(InterviewInfo: InterviewInfo, QuestionString: "¿Como es tu dieta?", options: ["Vegana", "Mixta", "Carne"])
+        QuestionTypeSelection(multiplier: 10,InterviewInfo: InterviewInfo, QuestionString: "¿Como consideras tu uso de electrodomesticos?", options: ["Bajo", "Moderado", "Alto"])
             
         default:
             ResultsView()
