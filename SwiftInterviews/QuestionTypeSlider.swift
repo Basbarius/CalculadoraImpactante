@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct QuestionTypeSlider: View {
+    var InterviewInfo: InterviewInformation = InterviewInformation()
     var QuestionNumber:String = "Question number 3"
     var QuestionString:String = "Cool really long question question"
-    var MinValue:String = "Min"
-    var MaxValue:String = "Max"
+    var MinValue:Double = 0
+    var MaxValue:Double = 10
+    
+    @State private var response: Double = 0.0
     
     var body: some View {
         VStack{
-            Text(QuestionNumber).italic().font(.title3).padding().frame(minWidth: 0,
+            Text("Question number  \(InterviewInfo.numberOfQuestion + 1)").italic().font(.title3).padding().frame(minWidth: 0,
                                         maxWidth: .infinity,
                                                  minHeight: 0,
                                                  maxHeight: 60,
@@ -27,17 +30,18 @@ struct QuestionTypeSlider: View {
                                                              maxHeight: 100,
                                                     alignment: .center).multilineTextAlignment(.center)
             Spacer().frame(minHeight:10,maxHeight: 70)
-            Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+            Slider(value: $response,in:0...MaxValue )
             HStack{
-                Text(MinValue).font(.body)
+                Text("\(MinValue)").font(.body)
                 Spacer()
-                Text(MaxValue)
+                Text("\(MaxValue)").font(.body)
             }.padding()
             Spacer()
             HStack{
                 Spacer()
             Button(action:{
-                //Next question and saving response
+                InterviewInfo.score += response
+                InterviewInfo.numberOfQuestion += 1
             }){
                 Text("Next").frame(width: 50, height: 40, alignment: .center)
             }.buttonStyle(.bordered).cornerRadius(100)
@@ -53,6 +57,8 @@ struct QuestionTypeSlider: View {
         
     }
 }
+
+
 
 struct QuestionTypeSlider_Previews: PreviewProvider {
     static var previews: some View {

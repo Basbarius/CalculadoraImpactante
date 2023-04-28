@@ -20,7 +20,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                     VStack{
                         NavigationLink{
-                            SpecialButton()
+                            Interview1()
                         } label: {
                             Image("food")
                                 .resizable()
@@ -38,7 +38,7 @@ struct HomeView: View {
                     
                     VStack{
                         NavigationLink{
-                            SpecialButton()
+                            Interview1()
                         } label: {
                             Image("unplug")
                                 .resizable()
@@ -55,7 +55,7 @@ struct HomeView: View {
                     
                     VStack{
                         NavigationLink{
-                            SpecialButton()
+                            Interview1()
                         } label: {
                             Image("walk")
                                 .resizable()
@@ -73,7 +73,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                     VStack{
                         NavigationLink{
-                            SpecialButton()
+                            Interview1()
                         } label: {
                             Image("results")
                                 .resizable()
