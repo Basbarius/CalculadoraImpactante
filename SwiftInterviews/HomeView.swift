@@ -73,7 +73,7 @@ struct HomeView: View {
                         .fontWeight(.bold)
                     VStack{
                         NavigationLink{
-                            Interview1()
+                            ResultsView()
                         } label: {
                             Image("results")
                                 .resizable()

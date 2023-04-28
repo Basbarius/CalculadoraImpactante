@@ -13,13 +13,13 @@ struct SwiftInterviewsApp: App {
         WindowGroup {
             TabView{
                 HomeView().tabItem{
-                    Label("Home", systemImage: "home")
+                    Label("Home", systemImage: "house.fill")
                 }
                 ActionsItem().tabItem{
-                    Label("Actions", systemImage: "home")
+                    Label("Actions", systemImage: "tree.fill")
                 }
                 BlogSelectorView().tabItem{
-                    Label("Blogs", systemImage: "home")
+                    Label("Blogs", systemImage: "book.fill")
                 }
                 
             }
