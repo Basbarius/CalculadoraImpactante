@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ResultsView: View {
+    var InterviewInfo: InterviewInformation = InterviewInformation()
     var body: some View {
         let prueba=1
         NavigationView{
             VStack(alignment:.leading){
    
-                switch prueba {
+                switch InterviewInfo.group {
                     
                 case 0:
                     Image("R1")
@@ -31,7 +32,7 @@ struct ResultsView: View {
                             .resizable()
                             .scaledToFit()
                         
-                        Spacer().frame(minHeight:10,maxHeight: 0)
+                        Spacer().frame(minHeight:10,maxHeight: 10)
                         Label("CO2", systemImage: "42.circle")
                             .font(.title)
                         //.bold()
@@ -50,7 +51,7 @@ struct ResultsView: View {
                         // .bold()
                             .labelStyle(TitleOnlyLabelStyle())
                         
-                        Spacer().frame(minHeight:10,maxHeight: 0)
+                        Spacer().frame(minHeight:10,maxHeight: 10)
                         
                         Label("9 Tonnes of ", systemImage: "42.circle")
                             .font(.system(size: 36, weight: .heavy, design: .serif))
@@ -58,7 +59,7 @@ struct ResultsView: View {
                               .labelStyle(TitleOnlyLabelStyle())
                         
                         
-                        Spacer().frame(minHeight:10,maxHeight: 0)
+                        Spacer().frame(minHeight:10,maxHeight: 10)
                         
                         
                         

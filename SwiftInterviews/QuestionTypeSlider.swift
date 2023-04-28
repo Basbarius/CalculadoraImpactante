@@ -30,11 +30,11 @@ struct QuestionTypeSlider: View {
                                                              maxHeight: 100,
                                                     alignment: .center).multilineTextAlignment(.center)
             Spacer().frame(minHeight:10,maxHeight: 70)
-            Slider(value: $response,in:0...MaxValue )
+            Slider(value: $response,in:0...MaxValue, step: 1)
             HStack{
-                Text("\(MinValue)").font(.body)
+                Text("\(MinValue, specifier: "%.0f")").font(.body)
                 Spacer()
-                Text("\(MaxValue)").font(.body)
+                Text("\(MaxValue, specifier: "%.0f")").font(.body)
             }.padding()
             Spacer()
             HStack{
