@@ -23,6 +23,7 @@ struct Interview1: View {
             
         default:
             ResultsView()
+            //ResultsView(group: InterviewInfo.group)
         }
     }
 }

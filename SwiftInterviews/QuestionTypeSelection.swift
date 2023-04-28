@@ -41,25 +41,25 @@ struct QuestionTypeSelection: View {
             Button(action:{
                 for (index, element) in options.enumerated() {
                     if(element==selectedOption){
-                        InterviewInfo.score += Double(index+1) * multiplier
-                        
+                        InterviewInfo.score += Double(index) * multiplier
+                
+                        var x = InterviewInfo.score/16
+                        if(x < 1){
+                            InterviewInfo.group = 5
+                        }
+                        else if(x < 2){
+                            InterviewInfo.group = 4
+                        }
+                        else if(x < 3){
+                                InterviewInfo.group = 3
+                        }
+                        else if(x < 4){
+                                InterviewInfo.group = 2
+                        }else{
+                            InterviewInfo.group = 1
+                        }
+                        InterviewInfo.numberOfQuestion += 1
                     }
-                    var x = InterviewInfo.score/16
-                    if(x < 1){
-                        InterviewInfo.group = 5
-                    }
-                    else if(x < 2){
-                        InterviewInfo.group = 4
-                    }
-                    else if(x < 3){
-                            InterviewInfo.group = 3
-                    }
-                    else if(x < 4){
-                            InterviewInfo.group = 2
-                    }else{
-                        InterviewInfo.group = 1
-                    }
-                    InterviewInfo.numberOfQuestion += 1
                     
                 }
             }){

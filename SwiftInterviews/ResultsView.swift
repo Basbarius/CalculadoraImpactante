@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ResultsView: View {
-    var InterviewInfo: InterviewInformation = InterviewInformation()
     var body: some View {
-        let prueba=1
+        var prueba=1
         NavigationView{
             VStack(alignment:.leading){
    
-                switch InterviewInfo.group {
+                switch prueba {
                     
                 case 0:
                     Image("R1")
