@@ -11,7 +11,19 @@ import SwiftUI
 struct SwiftInterviewsApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            TabView{
+                HomeView().tabItem{
+                    Label("Home", systemImage: "home")
+                }
+                ActionsItem().tabItem{
+                    Label("Actions", systemImage: "home")
+                }
+                BlogSelectorView().tabItem{
+                    Label("Blogs", systemImage: "home")
+                }
+                
+            }
+
         }
     }
 }
