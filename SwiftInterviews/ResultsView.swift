@@ -5,11 +5,14 @@
 //  Created by Fernanda Hernandez on 28/04/23.
 //
 
+
 import SwiftUI
 
 struct ResultsView: View {
+    var prueba: Int = 1000
+    
     var body: some View {
-        var prueba=1
+        
         NavigationView{
             VStack(alignment:.leading){
    
@@ -27,11 +30,11 @@ struct ResultsView: View {
                     //-------------------------------------------
                 case 1:
                     VStack {
-                        Image("R2")
+                        Image("R1")
                             .resizable()
                             .scaledToFit()
                         
-                        Spacer().frame(minHeight:10,maxHeight: 10)
+                        Spacer().frame(minHeight:10,maxHeight: 0)
                         Label("CO2", systemImage: "42.circle")
                             .font(.title)
                         //.bold()
@@ -50,22 +53,22 @@ struct ResultsView: View {
                         // .bold()
                             .labelStyle(TitleOnlyLabelStyle())
                         
-                        Spacer().frame(minHeight:10,maxHeight: 10)
+                        Spacer().frame(minHeight:10,maxHeight: 0)
                         
                         Label("9 Tonnes of ", systemImage: "42.circle")
                             .font(.system(size: 36, weight: .heavy, design: .serif))
-                             .foregroundColor(Color.green)
+                             .foregroundColor(Color.red)
                               .labelStyle(TitleOnlyLabelStyle())
                         
                         
-                        Spacer().frame(minHeight:10,maxHeight: 10)
+                        Spacer().frame(minHeight:10,maxHeight: 0)
                         
                         
                         
                         Label("C02 per year", systemImage: "flame")
                             .font(.system(size: 30, weight: .heavy, design: .serif))
                             .labelStyle(TitleOnlyLabelStyle())
-                            .foregroundColor(Color.green)
+                            .foregroundColor(Color.red)
                         
                         Spacer().frame(minHeight:10,maxHeight: 20)
                         
@@ -75,7 +78,7 @@ struct ResultsView: View {
                         
                         
                         Label("It is equal to drive from Alaska to Argentina 3 times 🚗 \nGo to The action tab to reduce your footprint",systemImage: "flame")
-                              .font(.system(size:15))
+                              .font(.system(size:13))
                              .labelStyle(TitleOnlyLabelStyle())
                             .multilineTextAlignment(.center)
                             .padding()
@@ -126,7 +129,7 @@ struct ResultsView: View {
                         
                         Label("7 Tonnes of ", systemImage: "42.circle")
                             .font(.system(size: 36, weight: .heavy, design: .serif))
-                             .foregroundColor(Color.green)
+                             .foregroundColor(Color.orange)
                               .labelStyle(TitleOnlyLabelStyle())
                         
                         
@@ -137,7 +140,7 @@ struct ResultsView: View {
                         Label("C02 per year", systemImage: "flame")
                             .font(.system(size: 30, weight: .heavy, design: .serif))
                             .labelStyle(TitleOnlyLabelStyle())
-                            .foregroundColor(Color.green)
+                            .foregroundColor(Color.orange)
                         
                         Spacer().frame(minHeight:10,maxHeight: 20)
                         
@@ -147,7 +150,7 @@ struct ResultsView: View {
                         
                         
                         Label("This is the amount of CO2 that takes to raise 42 cows 🐮 \nGo to The action tab to reduce your footprint",systemImage: "flame")
-                              .font(.system(size:15))
+                              .font(.system(size:16))
                              .labelStyle(TitleOnlyLabelStyle())
                             .multilineTextAlignment(.center)
                             .padding()
@@ -201,7 +204,7 @@ struct ResultsView: View {
                         
                         Label("4 Tonnes of ", systemImage: "42.circle")
                             .font(.system(size: 36, weight: .heavy, design: .serif))
-                             .foregroundColor(Color.green)
+                             .foregroundColor(Color.yellow)
                               .labelStyle(TitleOnlyLabelStyle())
                         
                         
@@ -212,7 +215,7 @@ struct ResultsView: View {
                         Label("C02 per year", systemImage: "flame")
                             .font(.system(size: 30, weight: .heavy, design: .serif))
                             .labelStyle(TitleOnlyLabelStyle())
-                            .foregroundColor(Color.green)
+                            .foregroundColor(Color.yellow)
                         
                         Spacer().frame(minHeight:10,maxHeight: 20)
                         
@@ -222,7 +225,7 @@ struct ResultsView: View {
                         
                         
                         Label("This is the average amount of CO2, it is a good start to decreasing your footprint 👏🏼 \nGo to The action tab to reduce your footprint",systemImage: "flame")
-                              .font(.system(size:15))
+                              .font(.system(size:16))
                              .labelStyle(TitleOnlyLabelStyle())
                             .multilineTextAlignment(.center)
                             .padding()
@@ -293,7 +296,7 @@ struct ResultsView: View {
                         
                         
                         Label("This is equal to 414 meal base meals 🥩 \nGo to The action tab to reduce your footprint",systemImage: "flame")
-                              .font(.system(size:15))
+                              .font(.system(size:16))
                              .labelStyle(TitleOnlyLabelStyle())
                             .multilineTextAlignment(.center)
                             .padding()
@@ -365,7 +368,7 @@ struct ResultsView: View {
             
             
                         Label("Excelent, if everyone did this the global warming will end by the year 2050 🥳", systemImage: "42.circle")
-                                .font(.system(size:15))
+                                .font(.system(size:12))
                                 .labelStyle(TitleOnlyLabelStyle())
                                 .multilineTextAlignment(.center)
                                 .padding()
@@ -378,23 +381,90 @@ struct ResultsView: View {
           
                     }
                 default:
-                    Image("R1")
-                        .resizable()
-                        .scaledToFit()
-                    Label("CO2", systemImage: "42.circle")
-                        .font(.title)
-                       // .bold()
-                        .labelStyle(TitleOnlyLabelStyle())
-                        
-                        //.position(x:200,y:0)
                     
+                    VStack {
+                        Image("R1")
+                            .resizable()
+                            .scaledToFit()
+                        
+                       
+                        Label("CO2", systemImage: "42.circle")
+                            .font(.title)
+                        //.bold()
+                            .labelStyle(TitleOnlyLabelStyle())
+                        Spacer()
+                        
+                    }.padding()
+                    
+                    Spacer().frame(minHeight:10,maxHeight: 30)
+                        
+                    VStack {
+                        
+                        
+                        Label("Amount of CO2 in worst case scenario:", systemImage: "42.circle")
+                            .font(.system(size: 20, weight: .heavy, design: .default))
+                        
+                            .multilineTextAlignment(.center)
+                        //.bold()
+                            .labelStyle(TitleOnlyLabelStyle())
+                        
+                        Spacer().frame(minHeight:10,maxHeight: 0)
+                        
+                        Label("9 Tonnes of ", systemImage: "42.circle")
+                            .font(.system(size: 29, weight: .heavy, design: .serif))
+                             .foregroundColor(Color.red)
+                              .labelStyle(TitleOnlyLabelStyle())
+                        
+                        
+                        Spacer().frame(minHeight:10,maxHeight: 0)
+                        
+                        
+                        
+                        Label("C02 per year", systemImage: "flame")
+                            .font(.system(size: 28, weight: .heavy, design: .serif))
+                            .labelStyle(TitleOnlyLabelStyle())
+                            .foregroundColor(Color.red)
+                        
+                        Spacer().frame(minHeight:10,maxHeight: 20)
+                        
+                        
+                        
+                        
+                        
+                        
+                        Label("It is equal to drive from Alaska to Argentina 3 times 🚗 \nGo to The action tab to reduce your footprint",systemImage: "flame")
+                              .font(.system(size:20))
+                             .labelStyle(TitleOnlyLabelStyle())
+                            .multilineTextAlignment(.center)
+                            .padding()
+                        
+                        Spacer().frame(minHeight:10,maxHeight: 0)
+                        
+                        
+                        
+                        Spacer()
+                        
+                        
+                        
+                           
+                        
+                      
+                        
+                        
+                        
+                    }
                 
                 }
+                
+                
+              
   
-            }
+            }.padding(25)
             
-    
-        }.navigationTitle("Results")
+          
+        }
+            .navigationTitle("Results")
+        
     }
        
 }
@@ -404,4 +474,3 @@ struct ResultsView_Preview: PreviewProvider {
         ResultsView()
     }
 }
-

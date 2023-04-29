@@ -22,8 +22,8 @@ struct Interview1: View {
         QuestionTypeSelection(multiplier: 10,InterviewInfo: InterviewInfo, QuestionString: "¿Como consideras tu uso de electrodomesticos?", options: ["Bajo", "Moderado", "Alto"])
             
         default:
-            ResultsView()
-            //ResultsView(group: InterviewInfo.group)
+            //ResultsView()
+            ResultsView(prueba: InterviewInfo.group)
         }
     }
 }
